@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-family: 'Nunito', sans-serif;
+}
+.Text1{
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    left: 37%;
+}
+.Text2{
+    text-align: center;
+    position: absolute;
+    top: 70px;
+    left: 40%;
+}
+.TitleBox{
+    width: 100%;
+    height: 45vh;
+    background: rgba(45,235,253,1);
+    display: flex;
+    align-items: flex-end;
+    transition: 2s;
+}
+.TitleBox:hover{
+    animation: bgc linear 4s infinite;
+}
+@keyframes bgc{
+    0%, 100%{
+        background: rgba(45,235,253,1);
+    }
+    25%{
+        background:rgb(225, 39, 110);
+    }
+    50%{
+        background: rgb(83, 223, 33);
+    }
+    75%{
+        background: rgb(245, 237, 18);
+    }
+}
+.LineBox{
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(90deg, rgba(104,107,154,1) 0%, rgba(10,10,10,1) 100%);
+    display: flex;
+    justify-content: start;
+}
+.Link{
+    height: 100%;
+    width: 50px;
+    background: rgba(0, 0, 0, 0.274);
+    text-align: center;
+    transition: 0.5s;
+}
+.Link:hover{
+    background: rgba(0, 0, 0, 0.411);
+}
+.About{
+    height: 55vh;
+    display: flex;
+    flex-direction: row
+}
+.AboutMe{
+    width: 37%;
+    background: rgb(225, 225, 225);
+    padding-right: 10px;
+    height: 100%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.TitleBox2{
+    width: 63%;
+    background: rgb(255, 255, 255);
+    padding-right: 10px;
+    height: 100%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.input1{
+    border-radius: 11px;
+    background: rgb(203, 203, 203);
+    border: 1px solid rgba(0, 0, 0, 0.64);
+    height: 100%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.ImageTXT1{
+    position: absolute;
+    bottom: 327px;
+    left: 30px;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+.input2{
+    border-radius: 11px;
+    background: rgb(203, 203, 203);
+    border: 1px solid rgba(0, 0, 0, 0.64);
+    height: 100%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.ImageTXT2{
+    position: absolute;
+    bottom: 327px;
+    left: 580px;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+.input2:valid ~ .ImageTXT2{
+    color: rgba(0, 0, 0, 0);
+}
